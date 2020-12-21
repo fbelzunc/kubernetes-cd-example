@@ -1,14 +1,7 @@
-apiVersion: extensions/v1beta1
-kind: Deployment
+apiVersion: v1
+kind: Namespace
 metadata:
-  name: sample-k8s-deployment
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: sample-k8s-app
-    spec:
-      containers:
-      - name: sample-k8s-app-container
-        image: busybox
+  creationTimestamp: null
+  name: test-to-delete
+spec: {}
+status: {}
